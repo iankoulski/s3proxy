@@ -473,7 +473,7 @@ public class S3ProxyHandler {
             if (!SUPPORTED_X_AMZ_HEADERS.contains(headerName.toLowerCase())) {
                 logger.error("Unknown header {} with URI {}",
                         headerName, request.getRequestURI());
-                throw new S3Exception(S3ErrorCode.NOT_IMPLEMENTED);
+                //throw new S3Exception(S3ErrorCode.NOT_IMPLEMENTED);
             }
         }
 
