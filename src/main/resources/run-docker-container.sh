@@ -10,5 +10,6 @@ exec java \
     -Djclouds.identity=${JCLOUDS_IDENTITY} \
     -Djclouds.credential=${JCLOUDS_CREDENTIAL} \
     -Djclouds.filesystem.basedir=/data \
+    ${S3_JAVA_OPTS} \
     -jar /opt/s3proxy/s3proxy \
     --properties /dev/null

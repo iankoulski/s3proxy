@@ -406,7 +406,8 @@ public class S3ProxyHandler {
                 case NONE:
                     break;
                 default:
-                    throw new S3Exception(S3ErrorCode.ACCESS_DENIED);
+                    // Ignore
+                    //throw new S3Exception(S3ErrorCode.ACCESS_DENIED);
                 }
                 break;
             case NONE:
